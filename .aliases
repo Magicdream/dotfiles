@@ -1,0 +1,16 @@
+alias git-rm='git rm $(git ls-files --deleted)'
+alias be='bundle exec'
+alias virool-deploy='bundle exec rake assets:precompile && bundle exec cap deploy:assets:update_manifest && bundle exec cap deploy'
+alias push-deploy='git push && be cap deploy'
+alias commit-deploy='git commit -a && push-deploy'
+
+alias ~='cd ~'
+alias -- -='cd -'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias ......='cd ../../../../..'
+
+alias s='sudo'
+alias le="less"
