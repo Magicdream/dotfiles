@@ -14,3 +14,6 @@ alias ......='cd ../../../../..'
 
 alias s='sudo'
 alias le="less"
+
+alias rc='bundle exec rails c'
+alias rs='bundle exec rails s'
