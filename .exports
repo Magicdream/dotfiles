@@ -8,3 +8,6 @@ RUBY_HEAP_SLOTS_INCREMENT=250000
 RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
 
 export VIROOL_ENV=magicdream
+
+export AWS_IAM_HOME=/Users/mike/IAMCli
+export JAVA_HOME=$(/usr/libexec/java_home)

@@ -1,4 +1,5 @@
 alias git-rm='git rm $(git ls-files --deleted)'
+alias gs='git status'
 alias be='bundle exec'
 alias virool-deploy='bundle exec rake assets:precompile && bundle exec cap deploy:assets:update_manifest && bundle exec cap deploy'
 alias push-deploy='git push && be cap deploy'
@@ -19,3 +20,5 @@ alias rc='bundle exec rails c'
 alias rs='bundle exec rails s'
 
 alias forward-8080='sudo ipfw add 100 fwd 127.0.0.1,8080 tcp from any to any 80 in'
+
+alias kill-dns="ps -ef|grep 'mDNSResponde[r]' | awk '{print $2;}' | xargs sudo kill -9"
